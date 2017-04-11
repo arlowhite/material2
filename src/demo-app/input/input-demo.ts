@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
+// import {MdCheckboxChange} from "../../lib/checkbox/checkbox";
 
 
 let max = 5;
@@ -32,6 +33,7 @@ export class InputDemo {
   rows = 8;
   formControl = new FormControl('hello', Validators.required);
   emailFormControl = new FormControl('', [Validators.required, Validators.pattern(EMAIL_REGEX)]);
+  checkFormControl = new FormControl(true);
   model = 'hello';
 
   addABunch(n: number) {
@@ -39,4 +41,12 @@ export class InputDemo {
       this.items.push({ value: ++max });
     }
   }
+
+  enableCheckFormControl(event: any) {
+    console.debug('enabling checkFormControl', event.checked);
+    if (event.checked) this.checkFormControl.enable();
+    else this.checkFormControl.disable();
+    console.debug('is form control enabled', this.checkFormControl.enabled);
+  }
+
 }

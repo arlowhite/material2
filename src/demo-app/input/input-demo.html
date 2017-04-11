@@ -73,6 +73,17 @@
       </md-input-container>
     </p>
 
+    <h4>Checkbox BUG</h4>
+
+    <div>
+      <div>
+        <md-checkbox (change)="enableCheckFormControl($event)" checked="true">Enable md-checkbox bound to formControl</md-checkbox>
+      </div>
+      <div>
+        <md-checkbox [formControl]="checkFormControl">This is enabled/disabled with the FormControl API</md-checkbox>
+      </div>
+    </div>
+
     <h4>With hint</h4>
 
     <md-input-container>
