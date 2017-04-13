@@ -42,6 +42,7 @@ export class DemoApp {
     {name: 'Checkbox', route: 'checkbox'},
     {name: 'Datepicker', route: 'datepicker'},
     {name: 'Dialog', route: 'dialog'},
+    {name: 'Expansion Panel', route: 'expansion'},
     {name: 'Gestures', route: 'gestures'},
     {name: 'Grid List', route: 'grid-list'},
     {name: 'Icon', route: 'icon'},

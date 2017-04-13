@@ -33,6 +33,7 @@ import {AutocompleteDemo} from '../autocomplete/autocomplete-demo';
 import {InputDemo} from '../input/input-demo';
 import {StyleDemo} from '../style/style-demo';
 import {DatepickerDemo} from '../datepicker/datepicker-demo';
+import {ExpansionDemo} from '../expansion/expansion-demo';
 
 export const DEMO_APP_ROUTES: Routes = [
   {path: '', component: Home},
@@ -68,4 +69,5 @@ export const DEMO_APP_ROUTES: Routes = [
   {path: 'snack-bar', component: SnackBarDemo},
   {path: 'platform', component: PlatformDemo},
   {path: 'style', component: StyleDemo},
+  {path: 'expansion', component: ExpansionDemo},
 ];

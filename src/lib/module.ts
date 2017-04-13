@@ -36,6 +36,7 @@ import {PlatformModule} from './core/platform/index';
 import {MdAutocompleteModule} from './autocomplete/index';
 import {StyleModule} from './core/style/index';
 import {MdDatepickerModule} from './datepicker/index';
+import {MdExpansionModule} from './expansion/index';
 
 const MATERIAL_MODULES = [
   MdAutocompleteModule,
@@ -46,6 +47,7 @@ const MATERIAL_MODULES = [
   MdCheckboxModule,
   MdDatepickerModule,
   MdDialogModule,
+  MdExpansionModule,
   MdGridListModule,
   MdIconModule,
   MdInputModule,

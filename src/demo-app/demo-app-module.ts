@@ -38,13 +38,15 @@ import {AutocompleteDemo} from './autocomplete/autocomplete-demo';
 import {InputDemo} from './input/input-demo';
 import {StyleDemo} from './style/style-demo';
 import {DatepickerDemo} from './datepicker/datepicker-demo';
+import {ExpansionDemo} from './expansion/expansion-demo';
 import {FullscreenOverlayContainer, OverlayContainer} from '@angular/material';
 import {
   MdAutocompleteModule, MdButtonModule, MdButtonToggleModule, MdCardModule, MdCheckboxModule,
-  MdChipsModule, MdCoreModule, MdDatepickerModule, MdDialogModule, MdGridListModule, MdIconModule,
-  MdInputModule, MdListModule, MdMenuModule, MdNativeDateModule, MdProgressBarModule, MdRadioModule,
-  MdProgressSpinnerModule, MdRippleModule, MdSelectModule, MdSidenavModule, MdSliderModule,
-  MdSlideToggleModule, MdSnackBarModule, MdTabsModule, MdToolbarModule, MdTooltipModule
+  MdChipsModule, MdCoreModule, MdDatepickerModule, MdDialogModule, MdExpansionModule,
+  MdGridListModule, MdIconModule, MdInputModule, MdListModule, MdMenuModule, MdNativeDateModule,
+  MdProgressBarModule, MdRadioModule, MdProgressSpinnerModule, MdRippleModule, MdSelectModule,
+  MdSidenavModule, MdSliderModule, MdSlideToggleModule, MdSnackBarModule, MdTabsModule,
+  MdToolbarModule, MdTooltipModule
 } from '@angular/material';
 
 /**
@@ -60,6 +62,7 @@ import {
     MdChipsModule,
     MdDatepickerModule,
     MdDialogModule,
+    MdExpansionModule,
     MdGridListModule,
     MdIconModule,
     MdInputModule,
@@ -140,6 +143,7 @@ export class DemoMaterialModule {}
     RainyTabContent,
     FoggyTabContent,
     PlatformDemo,
+    ExpansionDemo,
   ],
   providers: [
     {provide: OverlayContainer, useClass: FullscreenOverlayContainer}
