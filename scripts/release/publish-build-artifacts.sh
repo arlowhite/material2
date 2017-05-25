@@ -9,8 +9,8 @@ set -e -o pipefail
 cd $(dirname ${0})/../..
 
 # Material packages that need to published.
-PACKAGES=(cdk material)
-REPOSITORIES=(cdk-builds material2-builds)
+PACKAGES=(material)
+REPOSITORIES=(material2-builds)
 
 # Command line arguments.
 COMMAND_ARGS=${*}
@@ -30,7 +30,7 @@ publishPackage() {
   commitAuthorEmail=$(git --no-pager show -s --format='%ae' HEAD)
   commitMessage=$(git log --oneline -n 1)
 
-  repoUrl="https://github.com/angular/${packageRepo}.git"
+  repoUrl="git@github.com:arlowhite/${packageRepo}.git"
   repoDir="tmp/${packageRepo}"
 
   if [[ ! ${COMMAND_ARGS} == *--no-build* ]]; then
