@@ -1,6 +1,5 @@
 import {NgModule, ModuleWithProviders} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CompatibilityModule, UNIQUE_SELECTION_DISPATCHER_PROVIDER} from '../core';
 import {
   MdExpansionPanelHeader,
@@ -12,7 +11,7 @@ import {CdkAccordion} from './accordion';
 import {CdkAccordionItem} from './accordion-item';
 
 @NgModule({
-  imports: [CompatibilityModule, CommonModule, BrowserAnimationsModule],
+  imports: [CompatibilityModule, CommonModule],
   exports: [
     MdExpansionPanel,
     MdExpansionPanelHeader,
