@@ -42,8 +42,8 @@ import {MdExpansionPanel, EXPANSION_PANEL_ANIMATION_TIMING} from './expansion-pa
   },
   animations: [
     trigger('indicatorRotate', [
-      state('collapsed', style({transform: 'rotate(0deg)'})),
-      state('expanded', style({transform: 'rotate(-180deg)'})),
+      state('collapsed', style({transform: 'rotate(-180deg)'})),
+      state('expanded', style({transform: 'rotate(0deg)'})),
       transition('expanded <=> collapsed', animate(EXPANSION_PANEL_ANIMATION_TIMING)),
     ]),
     trigger('expansionHeight', [
